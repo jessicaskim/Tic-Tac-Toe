@@ -1,7 +1,3 @@
-# Jessica Kim
-# CS-UY 1114
-# Final project
-
 import turtle
 import time
 import random
@@ -29,7 +25,6 @@ def draw_board(board):
     the board on the screen, including the
     lines and the X and O pieces at the position
     indicated by the parameter.
-    Hint: Write this function first!
     """
     turtle.clear()
     turtle.hideturtle()
@@ -112,8 +107,8 @@ def do_user_move(board, x, y):
     Given a list representing the state of the board
     and an x,y screen coordinate pair indicating where
     the user clicked, update the board
-    with an O in the corresponding position. Your
-    code will need to translate the screen coordinate
+    with an O in the corresponding position. The
+    code translates the screen coordinate
     (a pixel position where the user clicked) into the
     corresponding board position (a value between 0 and
     8 inclusive, identifying one of the 9 board positions).
@@ -265,9 +260,6 @@ def clickhandler(x, y):
     This function is called by turtle in response
     to a user click. The parameters are the screen
     coordinates indicating where the click happened.
-    The function will call other functions. You do not
-    need to modify this function, but you do need
-    to understand it.
     """
     if do_user_move(the_board,x,y):
         draw_board(the_board)
@@ -279,8 +271,7 @@ def clickhandler(x, y):
 def main():
     """
     signature: () -> NoneType
-    Runs the tic-tac-toe game. You shouldn't
-    need to modify this function.
+    Runs the tic-tac-toe game.
     """
     turtle.tracer(0,0)
     turtle.hideturtle()
